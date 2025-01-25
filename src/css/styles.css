@@ -64,11 +64,15 @@ button{
 .swiper-slide{
  background-position: center;
  background-size: cover;
- width: 280px;
+ width: 400px;
 }
 .swiper-slide img{
   display: block;
   width: 100%;
+}
+
+.cristian{
+  width: 25%;
 }
 
 .svg{
