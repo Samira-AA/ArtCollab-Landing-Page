@@ -22,57 +22,61 @@
 <body>
   <div x-data="Data()" x-init="Start()">
     <nav class="py-8 ">
-        <div class="flex justify-between">
-        <div class="flex gap-3 mx-3 flex-col sm:flex-row">
-            <img class="w-10 h-10 md:w-9 rounded-full" src="./src/assets/logo.png"/>
-            <a href="./index.html" class="text-white text-xs sm:text-base font-bold"> ART COLLAB</a>
+        <div class="flex justify-between ">
+        <div class="flex mx-3 flex-col sm:flex-row  items-center ">
+            <img class="w-15" src="./src/assets/logo.svg"/>
+            <a href="./index.html" class="text-white text-2xl font-bold"> ART COLLAB</a>
         </div>
-        <div class="flex gap-5 text-xs sm:text-base flex-col justify-center items-center md:flex-row">
+        <div class="flex gap-5 text-xs sm:text-base flex-col justify-center justify-items-center items-center md:flex-row ">
             <span class="material-symbols-outlined text-white w-10 scale-125 hover:text-orange-400 md:hidden" @click="SetToggle()"> menu </span>
             <div class=" md:block" x-show="GetToggle()" @resize.window="toggle = window.outerWidth > 768 ? true : false">
-            <ul class="flex justify-center flex-wrap flex-col gap-3 text-center md:flex-row md:gap-0">
-                <li class="mr-6">
+            <ul class="flex justify-center flex-wrap flex-col gap-3 text-center md:flex-row md:gap-0 items-center  ">
+                <li class="ml-20 mr-12 text-xl">
                     <a href="#artists" class="text-white hover:text-orange-400">Artistas</a>
                 </li>
-                <li class="mr-6">
+                <li class="mr-12 text-xl">
                     <a href="#books" class="text-white hover:text-orange-400">Libros</a>
                 </li>
-                <li class="mr-6">
+                <li class="mr-12 text-xl">
                     <a href="#collaborate" class="text-white hover:text-orange-400">Colabora</a>
                 </li>
-                <li class="mr-6">
+                <li class="text-xl">
                     <a href="#" class="text-white hover:text-orange-400">Premium</a>
                 </li>
-                <div class="flex flex-col lg:flex-row gap-2 lg:gap-0">
-                  <li>
-                      <div class="border-slate-100 border-solid border-2 h-9 flex rounded-md mr-3 mb-3 md:mb-3 lg:mb-0">
-                        <input class=" bg-transparent  text-sm mx-2" placeholder="Buscar libros"/> 
-                        <span class="material-symbols-outlined text-white text-xl mx-2">search</span>
-                      </div>
-                      
-                   </li>
-                   <li>
-                     <a href="https://venerable-pika-0539b1.netlify.app/home">  <input class=" hover:cursor-pointer hover:scale-110 bg-transparent text-white border-slate-100 border-solid border-2 text-sm w-24 h-9 rounded-md" type="button" value="Inicia Sesion"/> </a> 
-                   </li>
-                   <li >
-                    <a  href="https://venerable-pika-0539b1.netlify.app/register"> <input  class="bg-white text-sm w-24 h-9 mx-3 hover:cursor-pointer hover:scale-110  rounded-md" type="button" value="Registrate"/> </a>
-                   </li>
-               </div>
+                
+               
             </ul>
             </div>
         </div>
+        <ul class="flex justify-center flex-wrap flex-col gap-3 text-center md:flex-row md:gap-0 items-centermd:block items-center " x-show="GetToggle()" @resize.window="toggle = window.outerWidth > 768 ? true : false">
+          <div class="flex flex-col lg:flex-row gap-2 lg:gap-0">
+            <li>
+                <div class="border-slate-100 border-solid border-2 h-12 flex rounded-md mr-3 mb-3 md:mb-3 lg:mb-0 items-center">
+                  <input class=" bg-transparent  text-sm mx-2 " placeholder="Buscar libros"/> 
+                  <span class="material-symbols-outlined text-white text-xl mx-1 ">search</span>
+                </div>
+                
+             </li>
+         </div>
+          <li>
+            <a href="https://venerable-pika-0539b1.netlify.app/home">  <input class=" hover:cursor-pointer hover:text-orange-400 bg-transparent text-white border-slate-100 border-solid border-2  px-3 py-2 text-lg rounded-md" type="button" value="Inicia Sesion"/> </a> 
+          </li>
+          <li >
+           <a  href="https://venerable-pika-0539b1.netlify.app/register"> <input  class="bg-white hover:text-orange-400 hover:cursor-pointer px-3 py-2 text-lg rounded-md mr-5 ml-3" type="button" value="Registrate"/> </a>
+          </li>
+         </ul>
         </div>
     </nav>
         </div>
-<div  class=" pt-7 sm:pt-16 hero-container flex justify-between overflow-x-hidden  relative">
-    <div class="flex flex-col gap-5"> 
-        <h1 class="text-xl font-bold sm:text-3xl md:text-4xl lg:text-6xl text-white"> INSPIRA, </h1>
-        <h1 class="text-xl font-bold sm:text-3xl md:text-4xl lg:text-6xl text-white"> CREA, </h1>
-        <h1 class="text-xl font-bold sm:text-3xl  md:text-4xl lg:text-6xl text-white"> COLABORA. </h1>
-        <a href="https://venerable-pika-0539b1.netlify.app/home"> <button class=" text-xs md:text-sm bg-blue-400 w-26 text-black h-9  sm:h-14  sm:w-64 md:w-64 lg:w-72  rounded-full">Unete a nuestra comunidad </button> </a>
+<div  class="sm:pt-8 hero-container flex justify-between justify-items-center relative ">
+    <div class="flex flex-col  gap-10 p-10"> 
+        <h1 class="text-3xl font-bold sm:text-3xl md:text-4xl lg:text-9xl text-white"> INSPIRA, </h1>
+        <h1 class="text-3xl font-bold sm:text-3xl md:text-4xl lg:text-9xl text-white"> CREA, </h1>
+        <h1 class="text-3xl font-bold sm:text-3xl  md:text-4xl lg:text-9xl text-white"> COLABORA. </h1>
+        <a href="https://venerable-pika-0539b1.netlify.app/home"> <button class="  lg:text-lg lg:mt-8 sm:mt-2 font-semibold md:text-sm bg-blue-200 w-26 text-black  sm:h-14  sm:w-64 md:w-64 lg:h-20 lg:w-80  rounded-full">Únete a nuestra comunidad </button> </a>
     </div>
-    <div>
-        <img src="./src/assets/Hero-image.png" alt="hero" class=" w-80 h-72 scale-125 sm:scale-100  md:h-full  md:w-full"/> 
+    <div class="flex content-end items-end ">
+        <img src="./src/assets/hero-image.svg" alt="hero" class="sm:h-screen  md:h-full  md:w-full svg"/> 
     </div>
 </div>
   <div 
