@@ -2,6 +2,7 @@
   padding:0;
   margin: 0;
   box-sizing: border-box;
+  outline: 1px solid red;
 }
 
 :root{
@@ -65,13 +66,10 @@ button{
  background-size: cover;
  width: 400px;
 }
+
 .swiper-slide img{
   display: block;
   width: 100%;
-}
-
-.cristian{
-  width: 25%;
 }
 
 .image{
@@ -83,19 +81,19 @@ button{
 }
 
 .hero-container {
-  min-height: 87vh; /* Ensure the container takes at least the full viewport height */
+  min-height: 87vh;
   display: flex;
   flex-direction: column;
 }
 
 @media (min-width: 768px) {
   .hero-container {
-    flex-direction: row; /* Switch to row layout on larger screens */
+    flex-direction: row; 
   }
 }
 
 .svg {
-  max-width: 100%; /* Ensure the image doesn't exceed its container's width */
-  height: auto; /* Maintain aspect ratio */
-  object-fit: contain; /* Scale the image proportionally */
+  max-width: 100%; 
+  height: auto; 
+  object-fit: contain; 
 }
