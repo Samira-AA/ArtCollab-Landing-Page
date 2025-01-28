@@ -15,7 +15,6 @@ html,body{
   height: 100%;
   z-index:-1;
   background-image: url("../assets/Hero-background.png");
-  background-repeat: no-repeat;
   background-size: cover; 
   background-position: center; 
 
@@ -80,28 +79,23 @@ button{
 }
 
 .svg{
-  width: 100%;
-    height: auto;
-    margin-right: -50px;
+  width: 80%;
 }
 
 .hero-container {
-  height:87vh;
-}
-@media(max-width: 991px){
-  body{
-      min-height: 0vh;
-  }
-  .books{
-      padding: 30px;
-  }
-
+  min-height: 87vh; /* Ensure the container takes at least the full viewport height */
+  display: flex;
+  flex-direction: column;
 }
 
-@media (width<=768px){
+@media (min-width: 768px) {
   .hero-container {
-    height:90vh;
-    flex-wrap: wrap;
+    flex-direction: row; /* Switch to row layout on larger screens */
   }
 }
 
+.svg {
+  max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: contain; /* Scale the image proportionally */
+}
