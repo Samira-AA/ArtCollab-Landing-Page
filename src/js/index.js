@@ -36,3 +36,51 @@ function Data(){
     },
     loop: true,
     });
+
+    document.addEventListener('alpine:init', () => {
+        Alpine.data('nav', () => ({
+          toggle: false,
+          SetToggle() {
+            this.toggle = !this.toggle;
+          },
+          GetToggle() {
+            return this.toggle;
+          }
+        }))
+      });
+    
+      const navigationLinks = `
+        <ul class="flex md:flex-row flex-col md:space-x-8 space-y-4 md:space-y-0">
+          <li class="text-xl xl:text-2xl lg:text-xl md:text-sm">
+            <a href="#artists" class="text-white hover:text-orange-400">Artistas</a>
+          </li>
+          <li class="text-xl xl:text-2xl  lg:text-xl md:text-sm">
+            <a href="#books" class="text-white hover:text-orange-400">Libros</a>
+          </li>
+          <li class="text-xl xl:text-2xl  lg:text-xl md:text-sm">
+            <a href="#collaborate" class="text-white hover:text-orange-400">Colabora</a>
+          </li>
+          <li class="text-xl xl:text-2xl  lg:text-xl md:text-sm">
+            <a href="#" class="text-white hover:text-orange-400">Premium</a>
+          </li>
+        </ul>
+      `;
+    
+      const buttonsAndSearch = `
+        <div class="flex md:flex-row flex-col md:space-x-4 space-y-4 md:space-y-0">
+          
+          <button class="  xl:text-lg md:text-sm whitespace-nowrap hover:cursor-pointer hover:text-orange-400 bg-transparent text-white border-slate-100 border-solid lg:px-6 md:px-1 border-2 px-4 py-2 rounded-md">
+            Iniciar Sesión
+          </button>
+          <button class=" xl:text-lg md:text-sm hover:cursor-pointer hover:text-orange-400 bg-white border-2 text-black  lg:px-6 md:px-1 px-6 py-2 rounded-md">
+            Registrarse
+          </button>
+        </div>
+      `;
+    
+    
+      document.getElementById('navigation-content').innerHTML = navigationLinks;
+      document.getElementById('buttons-content').innerHTML = buttonsAndSearch;
+    
+      document.getElementById('mobile-navigation-content').innerHTML = navigationLinks;
+      document.getElementById('mobile-buttons-content').innerHTML = buttonsAndSearch;
