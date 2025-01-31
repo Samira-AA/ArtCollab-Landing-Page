@@ -45,7 +45,7 @@
                x-show="isOpen"
                x-transition
                @resize.window="isOpen = window.outerWidth > 768 ? false : isOpen">
-            <div class="flex flex-col h-screen pt-20 px-6 gap-8">
+            <div class="flex flex-col h-screen box pt-20 px-6 gap-8">
               <div id="mobile-navigation-content" class="text-center"></div>
               <div id="mobile-buttons-content"></div>
             </div>
@@ -56,7 +56,7 @@
         
     <!-- Hero Section -->
     <div  class="sm:pt-8 hero-container flex justify-between justify-items-center relative">
-        <div class="flex flex-col gap-10 p-10"> 
+        <div class="flex flex-col gap-10 p-5 xl:p-10 "> 
             <h1 class="text-5xl font-bold lg:text-7xl xl:text-9xl text-white"> INSPIRA, </h1>
             <h1 class="text-5xl font-bold lg:text-7xl xl:text-9xl text-white"> CREA, </h1>
             <h1 class="text-5xl font-bold lg:text-7xl xl:text-9xl text-white"> COLABORA. </h1>
@@ -64,7 +64,7 @@
     </div>
 
     <div class="flex justify-end self-end">
-      <img src="./src/assets/hero-image.png" alt="hero" class="svg" />
+      <img src="./src/assets/hero-image.png" alt="hero" class="w-5/6" />
     </div>
   </div>
 
@@ -186,15 +186,15 @@
             <hr>
         </div>
         <div class="flex justify-center items-center md:justify-between flex-col gap-6 md:gap-3 md:flex-row mx-10 mt-4">
-            <div class="flex flex-col items-center m-0 ld:ml-4 md:ml-4 w-auto ">
-              <a href="#home">
-                <img src="./src/assets/logo.svg" alt="logo" class="rounded-full hover:cursor-pointer image ">
+            <div class="flex flex-col m-0 xl:ml-4 w-auto">
+              <a href="#home " class="flex flex-col items-center">
+                <img src="./src/assets/logo.svg" alt="logo" class="hover:cursor-pointer image ">
                 <p class="text-slate-200 font-bold text-center whitespace-nowrap text-2xl hover:cursor-pointer">ART COLLAB</p>
               </a>
                
             </div>
-            <div class="container">
-                <p class="text-slate-200 text-xl sm:text-lg md:text-sm lg:text-xl"> Un proyecto hecho por artistas, para artistas. Colabora y crea nuevos proyectos
+            <div class="ml-5">
+                <p class="text-slate-200 text-xl xl:text-2xl md:text-sm"> Un proyecto hecho por artistas, para artistas. Colabora y crea nuevos proyectos
                     y transforma tu hobby en un trabajo o revisa nuestro amplio catálogo de libros y de artistas.</p>
             </div>
 

@@ -50,7 +50,7 @@ function Data(){
       });
     
       const navigationLinks = `
-        <ul class="flex md:flex-row flex-col md:space-x-8 space-y-4 md:space-y-0">
+        <ul class="flex md:flex-row flex-col xl:space-x-10 lg:space-x-10 md:space-x-5 space-y-4 md:space-y-0">
           <li class="text-xl xl:text-2xl lg:text-xl md:text-sm">
             <a href="#artists" class="text-white hover:text-orange-400">Artistas</a>
           </li>
@@ -67,9 +67,8 @@ function Data(){
       `;
     
       const buttonsAndSearch = `
-        <div class="flex md:flex-row flex-col md:space-x-4 space-y-4 md:space-y-0">
-          
-          <button class="  xl:text-lg md:text-sm whitespace-nowrap hover:cursor-pointer hover:text-orange-400 bg-transparent text-white border-slate-100 border-solid lg:px-6 md:px-1 border-2 px-4 py-2 rounded-md">
+        <div class="flex md:flex-row flex-col md:space-x-4 space-y-7 md:space-y-0 max-w-[200px] md:max-w-none mx-auto">
+          <button class=" xl:text-lg md:text-sm whitespace-nowrap hover:cursor-pointer hover:text-orange-400 bg-transparent text-white border-slate-100 border-solid lg:px-6 md:px-1 border-2 px-4 py-2 rounded-md">
             Iniciar Sesión
           </button>
           <button class=" xl:text-lg md:text-sm hover:cursor-pointer hover:text-orange-400 bg-white border-2 text-black  lg:px-6 md:px-1 px-6 py-2 rounded-md">

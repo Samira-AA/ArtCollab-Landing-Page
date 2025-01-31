@@ -9,6 +9,8 @@
   --transition-delay: 1.2s;
 }
 
+
+/* Hero Section */
 html,body{
   margin: 0;
   padding: 0;
@@ -28,34 +30,13 @@ html,body{
   }
 }
 
-span:hover{
-  cursor: pointer;
-
+.hero-container {
+  min-height: 87vh;
+  display: flex;
+  flex-direction: column;
 }
 
-button{
-  animation:  var(--transition-delay) pulse infinite;
-}
-
-.login-body{
-  height: 100vh;
-}
-
-.box{
-  border: 1px solid red;
-}
-
-.box1{
-  border:1px solid green;
-}
-
-.box2{
-  border:1px solid blue;
-}
-
-.books{
-  padding: 50px 0 150px 0;;
-}
+/* Carousel */
 .swiper{
   display: flex;
   justify-content: center;
@@ -64,7 +45,7 @@ button{
 .swiper-slide{
  background-position: center;
  background-size: cover;
- width: 400px;
+ width:450px;
 }
 
 .swiper-slide img{
@@ -76,15 +57,12 @@ button{
   width: 150px;
 }
 
-.svg{
-  width: 80%;
+.books{
+  padding: 50px 0 150px 0;;
 }
 
-.hero-container {
-  min-height: 87vh;
-  display: flex;
-  flex-direction: column;
-}
+
+/* General Responsive */
 
 @media (min-width: 768px) {
   .hero-container {
@@ -92,8 +70,8 @@ button{
   }
 }
 
-.svg {
-  max-width: 100%; 
-  height: auto; 
-  object-fit: contain; 
+@media (min-width: 320px) {
+  .swiper-slide{
+    width:350px;
+   }
 }
