@@ -73,6 +73,9 @@ html, body {
   width: var(--image-width);
 }
 
+svg {
+  margin-bottom: -1px;
+}
 /* Books Section */
 .books {
   padding: 50px 0 150px 0;
